@@ -1,0 +1,55 @@
+body {
+    background-image: url(.//assets/images/bg.jpg);
+}
+
+@font-face {
+    font-family: Itim;
+    src: url("./assets/fonts/itim.woff2") format("woff2");
+  }
+  
+  * {
+    font-family: Itim;
+  }
+
+.pattern-content {
+    text-align: center;
+    margin-top: 5%;
+}
+
+.text-title {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.text-base {
+    font-size: 30px;
+}
+
+.container.margin-content {
+    margin-top: 5%;
+}
+
+.img-size {
+    height: 250px;
+}
+
+.button-margin {
+    margin-top: 5%;
+}
+
+.margin-text {
+margin-left: 20%
+}
+
+.margin-input {
+    margin-left: 100px;
+    margin-top: 5%;
+}
+
+.card.card-content {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5%;
+}
+
+
