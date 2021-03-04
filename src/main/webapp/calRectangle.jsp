@@ -12,8 +12,8 @@
         <title>Rectangle</title>
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-        crossorigin="anonymous">
+              integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+              crossorigin="anonymous">
 
         <link rel="stylesheet" href="./app.scss">
 
@@ -23,53 +23,62 @@
             <h1 class="text-title">พื้นที่สามเหลี่ยม</h1>
 
             <img src="http://2.bp.blogspot.com/-G9TZcLwEK1w/TyNy--Vr_9I/AAAAAAAAAAo/ZrKLli1_WrE/s320/2.jpg"
-                class="rounded img-size">
+                 class="rounded img-size">
 
             <div class="set-margin" style="margin-top: 3%;"></div>
 
             <p class="text-base"><b>สูตรการหาพื้นที่สี่เหลี่ยมผืนผ้า = </b>  กว้าง(width) * ยาว(length)</p>
 
             <div class="card">
-            <div class="container">
-                <div class="col margin-text">
-                    <div class="row">
-                        <div class="row-rm">
-                            <p class="text-base">กว้าง(width) : </p>
+                <div class="container">
+
+                    <form class="row g-3" action="DemoAbstractFactory" method="post">
+                        <div class="col margin-text">
+                            <div class="row">
+                                <div class="row-rm">
+                                    <p class="text-base">ฐาน : </p>
+                                </div>
+                                <div class="row-rm">
+                                    <input class="margin-input" type="number" name="height" required/> ซม.
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="row-rm">
+                                    <p class="text-base">สูง : &nbsp</p>
+                                </div>
+                                <div class="row-rm">
+                                    <input class="margin-input" type="number" name="width" required/> ซม.
+                                    <input type="hidden" name="opt" value="rec" required/>
+                                    <input type="hidden" name="base" value="0" required/>
+                                    <input class="margin-input" type="hidden" name="radius" value="0"required/>
+                                </div>
+                            </div>
                         </div>
-                        <div class="row-rm">
-                            <input class="margin-input" type="input" name="width"> ซม.
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="row-rm">
-                            <p class="text-base">ยาว(length) : </p>
-                        </div>
-                        <div class="row-rm">
-                            <input class="margin-input" type="input" name="length"> ซม.
-                        </div>
-                    </div>
+
+                        <button class="btn btn-primary button-margin text-base" type="submit"><b>คำนวณ</b></button>
+                        <a href="index.jsp" class="btn btn-light button-margin text-base" type="button" style="margin-left: 5%;"><b>กลับ</b></a>
+                    </form>
+
                 </div>
             </div>
-        </div>
 
-        <button class="btn btn-primary button-margin text-base" type="button"><b>คำนวณ</b></button>
-        <a href="index.jsp" class="btn btn-light button-margin text-base" type="button" style="margin-left: 5%;"><b>กลับ</b></a>
+
 
         </div>
 
         <div class="set-margin" style="margin-top: 3%;"></div>
 
-        </div>
+    </div>
 
 
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
             integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
             integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-            crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
             integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-            crossorigin="anonymous"></script>
-    </body>
+    crossorigin="anonymous"></script>
+</body>
 </html>
